@@ -1,5 +1,4 @@
 require 'sinatra'
-require 'sinatra/base'
 require 'sinatra/reloader'
 require './lib/database_connection'
 require './controllers/peeps_controller'
@@ -33,3 +32,4 @@ class Application < Sinatra::Base
   end
 end
 
+run Application.run!
